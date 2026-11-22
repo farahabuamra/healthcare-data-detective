@@ -1,35 +1,30 @@
-# Healthcare Data Detective — القضية 1: خدعة أرقام المبيعات
+# Healthcare Data Detective | محقق البيانات الصحية
 
-تجربة تفاعلية مجانية للصيادلة: لوحة بيانات وجدول و5 أسئلة، والهدف أن يجرب الصيدلاني تحليل البيانات الصحية ويكتشف جانب أو مسار ممكن يعجبه.
+### القضية 1: خدعة أرقام المبيعات
 
-## شو بالمجلد
-| الملف | شو هو |
-|---|---|
-| `index.html` | التجربة كاملة بملف واحد (الخطوط والشعار مدمجة، بدون أي اعتماد خارجي). هذا هو الملف الوحيد اللي بينشر |
-| `.nojekyll` | بيمنع GitHub من معالجة الملف، لا تحذفه |
-| `OPENCODE_PROMPT.md` | البرومبت الجاهز لـ OpenCode ليرفع الموقع |
-| `source/` | مصدر التجربة للتعديل المستقبلي (`template.html` + الخطوط والشعار + `assemble.py`) |
+**[ابدأ اللغز ←](https://farahabuamra.github.io/healthcare-data-detective/)**
 
-## الإعدادات اللي ممكن تتغير
-بأعلى كود الصفحة، سطر واحد:
+مدير الصيدلية بيحكي: «مبيعاتنا ارتفعت 12%، يعني إحنا بنكسب»
 
-```js
-var CONFIG={DM_URL:'https://ig.me/m/scfarah0',PROFILE_URL:'https://www.instagram.com/scfarah0/',HANDLE:'scfarah0',KEYWORD:'لغز',FORM_URL:''};
-```
+بس هل الرقم صحيح؟ قدامك لوحة بيانات وجدول و5 أسئلة، وإنت المحلل
 
-- `KEYWORD`: كلمة الرسائل اللي بتظهر بشاشة النهاية (حالياً «لغز»، مؤقتة)
-- `FORM_URL`: رابط استبيان قصير. إذا تركته فاضي، ما بيظهر رابط الاستبيان
-- `DM_URL` و`PROFILE_URL`: روابط حسابك على إنستغرام
+## شو رح تجرب
+- قراءة لوحة بيانات وفحص الرقم قبل تصديقه
+- مقارنة عادلة بين فترتين
+- اكتشاف مشكلة داخل البيانات
+- توصية للمدير ضمن حدود الدليل
 
-## كيف تعدّل وتعيد البناء
-1. عدّل `source/template.html` (الكلمة أو الأرقام أو النصوص)
-2. من داخل مجلد `source/` شغّل: `python3 assemble.py`
-3. بينتج `index.html` جديد داخل `source/`، انسخه مكان `index.html` الرئيسي وارفعه
+## لمين
+للصيادلة وطلاب الصيدلة وكل حدا فضولي يجرب تحليل البيانات الصحية، بدون أي خبرة سابقة بالتحليل
 
-أو للتعديل السريع (مثل `KEYWORD`): عدّل السطر مباشرة داخل `index.html`.
+تجربة مجانية وبتاخد دقائق، وبتشتغل على الموبايل واللابتوب
 
-## ملاحظات صادقة
-- الموقع ثابت بالكامل (static)، ما في سيرفر ولا قاعدة بيانات ولا تتبع. يعني ما رح تعرفي كم شخص فتحه أو أنهاه إلا إذا أضفتي أداة تحليلات أو استبيان
-- الأرقام والأسماء افتراضية ومصممة لأغراض تعليمية
-- الإجابات موجودة داخل كود الصفحة، أي شخص بيفتح "عرض المصدر" بيقدر يشوفها. مقبول لهدية مجانية، لكنه لا يصلح لاختبار تقييمي
-- الخطوط (Aref Ruqaa وZain) مفتوحة الترخيص، والشعار صورة حسابك
+> كل الأرقام والأسماء افتراضية ومصممة لأغراض تعليمية
+
+---
+
+## English
+
+An interactive, free case for pharmacists with no data-analysis background: a dashboard, a small table and five questions around one claim, "sales rose 12%, so we're doing well?" The goal is to practise questioning a number before trusting it (fair comparison, data quality, a recommendation within the evidence). All figures and names are synthetic and made for teaching. Single static HTML page, no tracking
+
+**Farah AbuAmra** · health data analyst · [Instagram @scfarah0](https://www.instagram.com/scfarah0/)
